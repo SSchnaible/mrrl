@@ -15,19 +15,22 @@
       <h2>Steps (Total Cost: {{ totalGoldCost }}g)</h2>
       <ul>
         <li
-          class="buy-step"
-          v-for="(buyStep, index) in buySteps"
-          v-bind:key="index"
+          v-for="murlocVisit in murlocVisits"
+          v-bind:key="json(murlocVisit)"
           style="text-align: left"
         >
           Goto
           <WowheadLink
-            v-bind:url="MURLOC_INFO[ITEM_INFO[buyStep.item].murloc].wowheadLink"
-            v-bind:name="ITEM_INFO[buyStep.item].murloc"
+            v-bind:url="MURLOC_INFO[murlocVisit.murloc].wowheadLink"
+            v-bind:name="murlocVisit.murloc"
             v-bind:color="NPC_COLOR"
           />
           <ul>
-            <li style="text-align: right">
+            <li
+              v-for="buyStep in murlocVisit.buys"
+              v-bind:key="json(buyStep)"
+              style="text-align: right"
+            >
               Buy {{ buyStep.amount}}
               <WowheadLink
                 v-bind:url="ITEM_INFO[buyStep.item].wowheadLink"
@@ -46,7 +49,14 @@
 <script lang="ts">
 import Vue from "vue";
 import { mapValues } from "lodash";
-import { END_ITEMS, MURLOC_INFO, ITEM_INFO, ItemSet, BuyStep } from "./model";
+import {
+  END_ITEMS,
+  MURLOC_INFO,
+  ITEM_INFO,
+  ItemSet,
+  BuyStep,
+  MurlocVisit
+} from "./model";
 import { solve } from "./solver";
 import WowheadLink from "./WowheadLink.vue";
 
@@ -75,14 +85,19 @@ export default Vue.extend({
     };
   },
   computed: {
-    solverResult: function(): [BuyStep[], number] {
+    solverResult: function(): [MurlocVisit[], number] {
       return solve(this.requiredItems);
     },
-    buySteps: function(): BuyStep[] {
+    murlocVisits: function(): MurlocVisit[] {
       return this.solverResult[0];
     },
     totalGoldCost: function(): number {
       return this.solverResult[1];
+    }
+  },
+  methods: {
+    json(obj: any): string {
+      return JSON.stringify(obj);
     }
   }
 });

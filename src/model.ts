@@ -1,4 +1,8 @@
-import { filter } from 'lodash';
+
+export type MurlocVisit = {
+    murloc: MurlocType;
+    buys: BuyStep[];
+};
 
 export type BuyStep = {
     item: ItemType;
