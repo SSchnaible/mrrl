@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <div class="required-items-section">
-      <h2>What items does Mrrl want?</h2>
+      <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+        <h2>What items does Mrrl want?</h2>
+        <a href="https://github.com/SSchnaible/mrrl" style="padding-left: 8px">
+          <img src="GitHub-Mark-Light-32px.png" />
+        </a>
+      </div>
       <div class="required-item" v-for="item in END_ITEMS" v-bind:key="item">
         <WowheadLink
           v-bind:url="ITEM_INFO[item].wowheadLink"
