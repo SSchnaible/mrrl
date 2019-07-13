@@ -23,19 +23,19 @@ export type MurlocInfoType = {
 export const MURLOC_INFO: { [id in MurlocType]: MurlocInfoType } = {
     'Flrgrrl': {
         id: 'Flrgrrl',
-        wowheadLink: 'https://ptr.wowhead.com/npc=151952/flrgrrl',
+        wowheadLink: 'https://wowhead.com/npc=151952/flrgrrl',
     },
     'Mrrglrlr': {
         id: 'Mrrglrlr',
-        wowheadLink: 'https://ptr.wowhead.com/npc=151950/mrrglrlr',
+        wowheadLink: 'https://wowhead.com/npc=151950/mrrglrlr',
     },
     'Hurlgrl': {
         id: 'Hurlgrl',
-        wowheadLink: 'https://ptr.wowhead.com/npc=151953/hurlgrl',
+        wowheadLink: 'https://wowhead.com/npc=151953/hurlgrl',
     },
     'Grrmrlg': {
         id: 'Grrmrlg',
-        wowheadLink: 'https://ptr.wowhead.com/npc=151951/grrmrlg',
+        wowheadLink: 'https://wowhead.com/npc=151951/grrmrlg',
     },
 };
 
@@ -86,7 +86,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Mass': {
         id: 'Mass',
         name: 'Unidentified Mass',
-        wowheadLink: 'https://ptr.wowhead.com/item=167912/unidentified-mass',
+        wowheadLink: 'https://wowhead.com/item=167912/unidentified-mass',
         murloc: 'Flrgrrl',
         quality: 'Common',
         cost: {
@@ -96,7 +96,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Bag': {
         id: 'Bag',
         name: 'Bag of Who-Knows-What',
-        wowheadLink: 'https://ptr.wowhead.com/item=167910/bag-of-who-knows-what',
+        wowheadLink: 'https://wowhead.com/item=167910/bag-of-who-knows-what',
         murloc: 'Flrgrrl',
         quality: 'Uncommon',
         cost: {
@@ -110,7 +110,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Butter': {
         id: 'Butter',
         name: 'Just Regular Butter',
-        wowheadLink: 'https://ptr.wowhead.com/item=167911/just-regular-butter',
+        wowheadLink: 'https://wowhead.com/item=167911/just-regular-butter',
         murloc: 'Flrgrrl',
         quality: 'Uncommon',
         cost: {
@@ -124,7 +124,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Food': {
         id: 'Food',
         name: 'Ghost Food',
-        wowheadLink: 'https://ptr.wowhead.com/item=167909/ghost-food',
+        wowheadLink: 'https://wowhead.com/item=167909/ghost-food',
         murloc: 'Flrgrrl',
         quality: 'Rare',
         cost: {
@@ -138,7 +138,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'RosettaStone': {
         id: 'RosettaStone',
         name: 'Beckoner\'s Rosetta Stone',
-        wowheadLink: 'https://ptr.wowhead.com/item=169782/beckoners-rosetta-stone',
+        wowheadLink: 'https://wowhead.com/item=169782/beckoners-rosetta-stone',
         murloc: 'Flrgrrl',
         quality: 'Epic',
         cost: {
@@ -155,7 +155,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Eyeball': {
         id: 'Eyeball',
         name: 'Slimy Naga Eyeball',
-        wowheadLink: 'https://ptr.wowhead.com/item=167896/slimy-naga-eyeball',
+        wowheadLink: 'https://wowhead.com/item=167896/slimy-naga-eyeball',
         murloc: 'Mrrglrlr',
         quality: 'Common',
         cost: {
@@ -165,7 +165,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Sculpture': {
         id: 'Sculpture',
         name: 'Disintegrating Sand Sculpture',
-        wowheadLink: 'https://ptr.wowhead.com/item=167903/disintegrating-sand-sculpture',
+        wowheadLink: 'https://wowhead.com/item=167903/disintegrating-sand-sculpture',
         murloc: 'Mrrglrlr',
         quality: 'Uncommon',
         cost: {
@@ -179,7 +179,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Rock': {
         id: 'Rock',
         name: 'Particularly Dense Rock',
-        wowheadLink: 'https://ptr.wowhead.com/item=167902/particularly-dense-rock',
+        wowheadLink: 'https://wowhead.com/item=167902/particularly-dense-rock',
         murloc: 'Mrrglrlr',
         quality: 'Rare',
         cost: {
@@ -196,7 +196,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Gloop': {
         id: 'Gloop',
         name: 'Smelly Pile of Gloop',
-        wowheadLink: 'https://ptr.wowhead.com/item=167904/smelly-pile-of-gloop',
+        wowheadLink: 'https://wowhead.com/item=167904/smelly-pile-of-gloop',
         murloc: 'Mrrglrlr',
         quality: 'Rare',
         cost: {
@@ -210,7 +210,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'BloodStone': {
         id: 'BloodStone',
         name: 'Pulsating Blood Stone',
-        wowheadLink: 'https://ptr.wowhead.com/item=169780/pulsating-blood-stone',
+        wowheadLink: 'https://wowhead.com/item=169780/pulsating-blood-stone',
         murloc: 'Mrrglrlr',
         quality: 'Epic',
         cost: {
@@ -227,7 +227,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Vegetable': {
         id: 'Vegetable',
         name: 'Sweet Sea Vegetable',
-        wowheadLink: 'https://ptr.wowhead.com/item=167915/sweet-sea-vegetable',
+        wowheadLink: 'https://wowhead.com/item=167915/sweet-sea-vegetable',
         murloc: 'Hurlgrl',
         quality: 'Common',
         cost: {
@@ -237,7 +237,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Jar': {
         id: 'Jar',
         name: 'Jar of Fish Faces',
-        wowheadLink: 'https://ptr.wowhead.com/item=167914/jar-of-fish-faces',
+        wowheadLink: 'https://wowhead.com/item=167914/jar-of-fish-faces',
         murloc: 'Hurlgrl',
         quality: 'Uncommon',
         cost: {
@@ -251,7 +251,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Sock': {
         id: 'Sock',
         name: 'Dirty Murloc Sock',
-        wowheadLink: 'https://ptr.wowhead.com/item=167916/dirty-murloc-sock',
+        wowheadLink: 'https://wowhead.com/item=167916/dirty-murloc-sock',
         murloc: 'Hurlgrl',
         quality: 'Uncommon',
         cost: {
@@ -265,7 +265,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Lunch': {
         id: 'Lunch',
         name: 'Healthy Murloc Lunch',
-        wowheadLink: 'https://ptr.wowhead.com/item=167913/healthy-murloc-lunch',
+        wowheadLink: 'https://wowhead.com/item=167913/healthy-murloc-lunch',
         murloc: 'Hurlgrl',
         quality: 'Rare',
         cost: {
@@ -279,7 +279,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Finger': {
         id: 'Finger',
         name: 'Cultist Pinky Finger',
-        wowheadLink: 'https://ptr.wowhead.com/item=169783/cultist-pinky-finger',
+        wowheadLink: 'https://wowhead.com/item=169783/cultist-pinky-finger',
         murloc: 'Hurlgrl',
         quality: 'Epic',
         cost: {
@@ -296,7 +296,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Fish': {
         id: 'Fish',
         name: 'Flatulent Fish',
-        wowheadLink: 'https://ptr.wowhead.com/item=167906/flatulent-fish',
+        wowheadLink: 'https://wowhead.com/item=167906/flatulent-fish',
         murloc: 'Grrmrlg',
         quality: 'Common',
         cost: {
@@ -306,7 +306,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Horn': {
         id: 'Horn',
         name: 'Curious Murloc Horn',
-        wowheadLink: 'https://ptr.wowhead.com/item=167905/curious-murloc-horn',
+        wowheadLink: 'https://wowhead.com/item=167905/curious-murloc-horn',
         murloc: 'Grrmrlg',
         quality: 'Uncommon',
         cost: {
@@ -320,7 +320,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Snail': {
         id: 'Snail',
         name: 'Extra-Slimy Snail',
-        wowheadLink: 'https://ptr.wowhead.com/item=167907/extra-slimy-snail',
+        wowheadLink: 'https://wowhead.com/item=167907/extra-slimy-snail',
         murloc: 'Grrmrlg',
         quality: 'Rare',
         cost: {
@@ -334,7 +334,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Dust': {
         id: 'Dust',
         name: 'Sea Giant Foot Dust',
-        wowheadLink: 'https://ptr.wowhead.com/item=167908/sea-giant-foot-dust',
+        wowheadLink: 'https://wowhead.com/item=167908/sea-giant-foot-dust',
         murloc: 'Grrmrlg',
         quality: 'Rare',
         cost: {
@@ -348,7 +348,7 @@ export const ITEM_INFO: { [id in ItemType]: ItemInfoType } = {
     'Idol': {
         id: 'Idol',
         name: 'Overwhelmingly-Alluring Idol',
-        wowheadLink: 'https://ptr.wowhead.com/item=169781/overwhelmingly-alluring-idol',
+        wowheadLink: 'https://wowhead.com/item=169781/overwhelmingly-alluring-idol',
         murloc: 'Grrmrlg',
         quality: 'Epic',
         cost: {

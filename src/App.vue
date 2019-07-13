@@ -19,7 +19,7 @@
           v-bind:key="json(murlocVisit)"
           style="text-align: left"
         >
-          Goto
+          Go to
           <WowheadLink
             v-bind:url="MURLOC_INFO[murlocVisit.murloc].wowheadLink"
             v-bind:name="murlocVisit.murloc"
